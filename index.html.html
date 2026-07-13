@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rey de Ases - Cargando Fichas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4577920262438801');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=4577920262438801&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-dark: #BF953F;
+            --black: #050505;
+        }
+        body {
+            background-color: var(--black);
+            font-family: 'Playfair Display', serif;
+        }
+        .text-gold { color: var(--gold); }
+        .bg-gold { background-color: var(--gold); }
+        .font-cinzel { font-family: 'Cinzel', serif; }
+        .gold-glow { text-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
+    </style>
+</head>
+
+<body class="text-white min-h-screen flex flex-col items-center">
+
+    <header class="w-full pt-10 pb-6 flex justify-center">
+        <img src="logo.png" alt="Rey de Ases Logo" class="max-w-[280px] md:max-w-[400px] drop-shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+    </header>
+
+    <main class="flex-grow w-full max-w-5xl px-4 flex flex-col md:flex-row items-center justify-center gap-12 py-10">
+        
+        <div class="w-full md:w-1/2 flex justify-center order-1 md:order-1">
+            <img src="personaje.png" alt="Rey de Ases Personaje" class="w-72 h-72 md:w-96 md:h-96 object-contain rounded-full border-4 border-gold shadow-[0_0_40px_rgba(212,175,55,0.3)] hover:scale-105 transition-transform duration-500">
+        </div>
+
+        <div class="w-full md:w-1/2 text-center md:text-left space-y-8 order-2 md:order-2">
+            <h1 class="text-5xl md:text-7xl font-cinzel text-gold font-black gold-glow uppercase tracking-tighter leading-none">
+                Estamos cargando fichas
+            </h1>
+            <p class="text-gray-300 text-xl md:text-2xl italic font-serif">La casa siempre paga. Tu fortuna espera al otro lado.</p>
+            
+            <a href="https://wa.me/5491164714339" target="_blank" class="inline-flex items-center justify-center gap-4 bg-[#25D366] hover:bg-[#128C7E] transition-all duration-300 text-white px-10 py-5 rounded-full font-bold text-xl shadow-[0_5px_15px_rgba(37,211,102,0.4)] hover:scale-105 hover:shadow-[0_8px_25px_rgba(37,211,102,0.6)]">
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.591 5.52 0 10.002-4.48 10.002-10.002 0-5.522-4.482-10.002-10.002-10.002-5.521 0-10.002 4.48-10.002 10.002 0 2.052.599 3.799 1.488 5.385l-.946 3.453 3.568-.934z"/></svg>
+                <span>Contactar por WhatsApp</span>
+            </a>
+        </div>
+    </main>
+
+    <footer class="w-full py-16 border-t border-gold/20 bg-gradient-to-b from-black to-[#0a0a0a] mt-10">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-gold font-cinzel text-2xl mb-10 uppercase tracking-[0.2em]">Métodos de Pago Disponibles</h2>
+            <div class="flex flex-wrap justify-center gap-10 md:gap-20">
+                
+                <div class="flex flex-col items-center gap-3">
+                    <img src="mercadopago.png" alt="Mercado Pago" class="w-20 h-20 md:w-28 md:h-28 object-contain bg-white rounded-2xl p-2">
+                    <span class="text-sm uppercase tracking-widest text-gray-400">Mercado Pago</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-3">
+                    <img src="naranjax.png" alt="Naranja X" class="w-20 h-20 md:w-28 md:h-28 object-contain bg-white rounded-2xl p-2">
+                    <span class="text-sm uppercase tracking-widest text-gray-400">Naranja X</span>
+                </div>
+
+                <div class="flex flex-col items-center gap-3">
+                    <img src="bna.png" alt="Banco Nación" class="w-20 h-20 md:w-28 md:h-28 object-contain bg-white rounded-2xl p-2">
+                    <span class="text-sm uppercase tracking-widest text-gray-400">Banco Nación</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

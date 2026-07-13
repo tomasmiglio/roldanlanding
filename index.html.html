@@ -6,7 +6,6 @@
     <title>Rey de Ases - Tu fortuna espera</title>
     <meta name="description" content="La casa siempre paga. Únete a Rey de Ases y comienza a jugar hoy mismo.">
     
-    <!-- Meta Pixel Code Placeholder -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -16,7 +15,6 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        // REEMPLAZA 'TU_PIXEL_ID_AQUI' CON TU ID DE META PIXEL
         fbq('init', '4577920262438801'); 
         fbq('track', 'PageView');
     </script>
@@ -28,10 +26,11 @@
         .gold-glow { text-shadow: 0 0 20px rgba(212, 175, 55, 0.8); }
     </style>
 </head>
+
 <body class="text-white min-h-screen relative flex flex-col items-center">
 
-    <div class="fixed inset-0 z-0 bg-cover bg-center" style="background-image: url('personaje.png');">
-        <div class="absolute inset-0 bg-black/75"></div>
+    <div class="fixed inset-0 z-0 bg-cover bg-center blur-sm" style="background-image: url('personaje.png');">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
     </div>
 
     <main class="relative z-10 flex flex-col items-center justify-start w-full max-w-5xl px-4 pt-12 text-center min-h-screen">
@@ -40,24 +39,21 @@
             <img src="logo.png" alt="Rey de Ases Logo" class="max-w-[280px] md:max-w-[400px]">
         </header>
 
-        <h1 class="text-4xl md:text-6xl font-cinzel text-[#D4AF37] font-black gold-glow uppercase mb-8">
+        <h1 class="text-4xl md:text-6xl font-cinzel text-white font-black gold-glow uppercase mb-8">
             Estamos cargando fichas
         </h1>
+
+        <div class="mt-4 mb-12 flex flex-wrap justify-center gap-8 items-center">
+            <img src="mercadopago.png" alt="Mercado Pago" class="h-24 md:h-32 w-auto object-contain">
+            <img src="naranjax.png" alt="Naranja X" class="h-24 md:h-32 w-auto object-contain">
+            <img src="bna.png" alt="Banco Nación" class="h-24 md:h-32 w-auto object-contain">
+        </div>
         
         <a href="https://wa.me/5491164714339" target="_blank" 
            class="animate-bounce flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 font-bold text-lg shadow-2xl hover:bg-[#128C7E] transition-all duration-300">
             <img src="whatsapp.png" alt="WhatsApp" class="w-8 h-8 object-contain">
             <span>Contactar por WhatsApp</span>
         </a>
-
-        <div class="mt-8 w-full max-w-xl bg-black/40 p-6 border border-[#D4AF37]/20">
-            <h2 class="text-[#D4AF37] font-cinzel text-lg mb-4 uppercase tracking-[0.2em]">Métodos de Pago</h2>
-            <div class="flex flex-wrap justify-center gap-6">
-                <img src="mercadopago.png" alt="Mercado Pago" class="w-16 h-16 object-contain bg-white p-2">
-                <img src="naranjax.png" alt="Naranja X" class="w-16 h-16 object-contain bg-white p-2">
-                <img src="bna.png" alt="Banco Nación" class="w-16 h-16 object-contain bg-white p-2">
-            </div>
-        </div>
 
         <p class="text-gray-200 text-xl md:text-2xl italic font-serif mt-10">
             La casa siempre paga. Tu fortuna espera al otro lado.
